@@ -12,12 +12,12 @@ puts "----------"
 # richmond store
 @store2 = Store.find_by(id: 2);
 
-puts "Store 1 name: #{@store1.name}"
-puts "Store 2 name: #{@store2.name}"
+puts "Store 1 revenue: #{@store1.annual_revenue}"
+puts "Store 2 revenue: #{@store2.annual_revenue}"
 
-@store1.name = 'Vancouver'
+@store1.annual_revenue = 255250
 @store1.save
 
-puts "Store 1 NEW name: #{@store1.name}"
-puts "Store 2 name: #{@store2.name}"
+puts "Store 1 NEW revenue: #{@store1.annual_revenue}"
+puts "Store 2 revenue: #{@store2.annual_revenue}"
 
