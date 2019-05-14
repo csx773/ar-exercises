@@ -21,12 +21,12 @@ puts "Number of stores: #{Store.count}"
 @mens_store = Store.where(mens_apparel: true)
 
 @mens_store.each do |store|
-    puts "#{store.name} store have revenue: #{store.annual_revenue}"
+    puts "(Men) #{store.name} store have revenue: #{store.annual_revenue}"
 end
 
 @womens_store = Store.where({womens_apparel: true, annual_revenue: 1..1000000})
 
 @womens_store.each do |store|
-    puts "#{store.name} store have revenue: #{store.annual_revenue}"
+    puts "(Women) #{store.name} store have revenue: #{store.annual_revenue}"
 end
 
